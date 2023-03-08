@@ -76,14 +76,12 @@ const CHARS: &[char] = &[
 ];
 
 pub const RENDEZVOUS_SERVERS: &[&str] = &[
-    "rs-ny.rustdesk.com",
-    "rs-sg.rustdesk.com",
-    "rs-cn.rustdesk.com",
+    "rustdesk.sunnyoptical.cn",
 ];
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
     Some(key) if !key.is_empty() => key,
-    _ => "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=",
+    _ => "eOT9JJfOjGsFHSK1IwnAY+aMaqQp5w1OW1bn8rRcGgw=",
 };
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
